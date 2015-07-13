@@ -8,10 +8,8 @@ This extension requires:
 
 * Behat 3.0+
 * PHP 5.4+
-* 
 
 Through Composer
-~~~~~~~~~~~~~~~~
 
 The easiest way to keep your suite updated is to use Composer :
 
