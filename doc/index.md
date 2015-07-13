@@ -9,9 +9,7 @@ This extension requires:
 * Behat 3.0+
 * PHP 5.4+
 
-Through Composer
-
-The easiest way to keep your suite updated is to use Composer :
+The easiest way to keep your suite updated is to use Composer
 
 1. Define dependencies in your `composer.json`:
 
@@ -24,7 +22,6 @@ The easiest way to keep your suite updated is to use Composer :
         }
     }
 ```
-
 
 2. Install/update your vendors:
 
