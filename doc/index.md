@@ -16,15 +16,16 @@ The easiest way to keep your suite updated is to use `Composer <http://getcompos
 
 1. Define dependencies in your ``composer.json``:
 
-    ```javascript
-        {
-            "require-dev": {
-                ...
+```javascript
+    {
+        "require-dev": {
+            ...
 
-                "behat/web-api-extension": "~1.0@dev"
-            }
+            "behat/web-api-extension": "~1.0@dev"
         }
-    ```
+    }
+```
+
 
 2. Install/update your vendors:
 
