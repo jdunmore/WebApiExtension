@@ -16,7 +16,7 @@ The easiest way to keep your suite updated is to use `Composer <http://getcompos
 
 1. Define dependencies in your ``composer.json``:
 
-	```javascript
+    ```javascript
         {
             "require-dev": {
                 ...
@@ -28,20 +28,20 @@ The easiest way to keep your suite updated is to use `Composer <http://getcompos
 
 2. Install/update your vendors:
 
-	```bash
+    ```bash
         $ composer update behat/web-api-extension
-	```
+    ```
         
 
 3. Activate extension by specifying its class in your ``behat.yml``:
 
-	```yaml
+   ```yaml
         # behat.yml
         default:
           # ...
           extensions:
             Behat\WebApiExtension: ~
-	```
+    ```
 
 Usage
 -----
@@ -50,14 +50,14 @@ Various options:
 
 1. Make your suite WebApiContext aware. In behat.yml
 
-	```yaml    
+   ```yaml    
         #behat.yml
         default:
             suites:
                 MySetOfFeatures_features:
                     paths: [ %paths.base%/features/MySetOfFeatures ]
                     contexts: [ Behat\WebApiExtension\Context\WebApiContext ]
-       ```
+   ```
 
 2. Define a context and extend `Behat\WebApiExtension\Context\WebApiContext`
 
