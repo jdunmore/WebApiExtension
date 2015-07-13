@@ -63,3 +63,19 @@ Various options:
 3. Definte a context, and implement ApiClientAwareContext (This will make you implement setClient() and you won't have any predefined steps)
 
 Option 1 and 2 allow you to use the predefined stueps, option 3 allows you to use the tools and implement the steps using a language that makes sense to your business.
+
+
+### Predefined Steps
+
+For options 1 and 2 above, the predefined steps are in [WebApiContext](../src/Context/WebApiContext.php) for reference they are
+
+* iAmAuthenticatingAs
+* iSetHeaderWithValue
+* iSendARequest
+* iSendARequestWithValues
+* iSendARequestWithBody
+* iSendARequestWithFormData
+* theResponseCodeShouldBe
+* theResponseShouldContain
+* theResponseShouldNotContain
+* theResponseShouldContainJson
