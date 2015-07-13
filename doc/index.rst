@@ -50,13 +50,16 @@ Various options:
 1. Make your suite WebApiContext aware. In behat.yml
 
     .. code-block:: yaml
+    
         #behat.yml
         default:
             suites:
                 MySetOfFeatures_features:
                     paths: [ %paths.base%/features/MySetOfFeatures ]
                     contexts: [ Behat\WebApiExtension\Context\WebApiContext ]
-                    
-                    
-                    
 
+2. Define a context and extend `Behat\WebApiExtension\Context\WebApiContext`
+
+3. Definte a context, and implement ApiClientAwareContext (This will make you implement setClient() and you won't have any predefined steps)
+
+Option 1 and 2 allow you to use the predefined stueps, option 3 allows you to use the tools and implement the steps using a language that makes sense to your business.
