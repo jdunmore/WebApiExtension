@@ -12,7 +12,6 @@ This extension requires:
 The easiest way to keep your suite updated is to use Composer
 
 1. Define dependencies in your `composer.json`:
-
 ```javascript
     {
         "require-dev": {
@@ -22,15 +21,11 @@ The easiest way to keep your suite updated is to use Composer
         }
     }
 ```
-
 2. Install/update your vendors:
-
 ```bash
     $ composer update behat/web-api-extension
 ```
-
 3. Activate extension by specifying its class in your ``behat.yml``:
-
 ```yaml
         # behat.yml
         default:
