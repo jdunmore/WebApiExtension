@@ -44,3 +44,19 @@ The easiest way to keep your suite updated is to use `Composer <http://getcompos
 
 Usage
 -----
+
+Various options:
+
+1. Make your suite WebApiContext aware. In behat.yml
+
+    .. code-block:: yaml
+        #behat.yml
+        default:
+            suites:
+                MySetOfFeatures_features:
+                    paths: [ %paths.base%/features/MySetOfFeatures ]
+                    contexts: [ Behat\WebApiExtension\Context\WebApiContext ]
+                    
+                    
+                    
+
